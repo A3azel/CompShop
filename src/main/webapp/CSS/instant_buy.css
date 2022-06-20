@@ -1,0 +1,25 @@
+body{
+  background: #3A0A50;
+  height: 100%;
+}
+.container{
+  background: whitesmoke;
+  margin: auto;
+  width: 40%;
+  padding: 10px;
+  border-radius: 14px;
+}
+button{
+  background: #3A0A50;
+  border: 6px solid #3A0A50;
+  border-radius: 13px;
+  color: white;
+}
+#image{
+margin-right:10px;
+margin-left: 5%;
+width: 50%;
+}
+img{
+    width: 100%
+}

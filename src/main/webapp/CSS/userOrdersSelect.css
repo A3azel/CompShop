@@ -1,0 +1,16 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: #3A0A50;
+    min-height: 100%;
+}
+#container{
+    background: whitesmoke;
+    margin: auto;
+    width: 40%;
+    padding: 10px;
+    border-radius: 14px;
+}

@@ -1,0 +1,23 @@
+form{
+  background: whitesmoke;
+  margin: auto;
+  width: 15%;
+  padding: 10px;
+  border-radius: 14px;
+  display: block;
+}
+input{
+  border: 2px solid black;
+  border-radius: 13px;
+  color: black;
+}
+h1{
+  text-align: center;
+}
+.wrapper {
+  min-height: 100%;
+}
+body{
+  background: #3A0A50;
+  height: 100%;
+}
