@@ -11,7 +11,7 @@
 <html lang="ua">
 <head>
     <title>User info for admin</title>
-    <link href="CSS/userInfoForAdmin.css" rel="stylesheet" type="text/css">
+    <link href="CSS/SameCSS.css" rel="stylesheet" type="text/css">
     <link href="CSS/headerStyle.css" rel="stylesheet" type="text/css">
     <link href="CSS/footerStile.css" rel="stylesheet" type="text/css">
 </head>

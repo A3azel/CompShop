@@ -33,9 +33,10 @@ public class LoginServlet extends HttpServlet {
         String password = req.getParameter("userPassword");
         DAOFactory daoFactory = DAOFactory.getInstance();
         boolean isLogin = daoFactory.getUserDAORealize().findUserByUsernameAndPassword(name,password) != null;
-        System.out.println(name);
+        //System.out.println(daoFactory.getUserDAORealize());
+        /*System.out.println(name);
         System.out.println(password);
-        System.out.println(isLogin);
+        System.out.println(isLogin);*/
 
 
         HashMap<String,String> errorAttribute = new HashMap<>();

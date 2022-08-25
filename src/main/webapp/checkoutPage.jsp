@@ -15,6 +15,7 @@
 
     <link href="CSS/instant_buy.css" rel="stylesheet" type="text/css">
     <link href="CSS/footerStile.css" rel="stylesheet" type="text/css">
+    <link href="CSS/SameCSS.css" rel="stylesheet" type="text/css">
     <link href="CSS/headerStyle.css" rel="stylesheet" type="text/css">
 </head>
 <body>

@@ -7,40 +7,12 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%--<html>
-<head>
-    <title>Управління користувачами</title>
-</head>
-<body>
-<c:forEach var="registeredUsers" items="${requestScope.allUsers}">
-    ID: ${registeredUsers.userID}
-    Ім'я: ${registeredUsers.userName}
-    E-mail: ${registeredUsers.userEmail}
-    Статус: ${registeredUsers.userStatus}
-    <form action="adminPanelUsersInfo" method="get" >
-        <button name="userByName" value="${registeredUsers.userName}">Інформація</button>
-    </form>
-    <c:choose>
-        <c:when test="${!registeredUsers.userStatus.equals('admin')}">
-            <form action="adminPanelUsersInfo" method="post">
-                <button name="userIDPost" value="${registeredUsers.userID}">Видалити</button>
-                <button name="upgradeUser" value="${registeredUsers.userID}">Зробити адміністратором</button>
-            </form>
-        </c:when>
-    </c:choose>
-    <hr>
-</c:forEach>
-<div id="footer">
-    <jsp:include page="footerFile.HTML" />
-</div>
-</body>
-</html>--%>
 
 <!DOCTYPE html>
 <html lang="ua">
 <head>
     <title>Управління користувачами</title>
-    <link href="CSS/userInfo.css" rel="stylesheet" type="text/css">
+    <link href="CSS/SameCSS.css" rel="stylesheet" type="text/css">
     <link href="CSS/headerStyle.css" rel="stylesheet" type="text/css">
     <link href="CSS/footerStile.css" rel="stylesheet" type="text/css">
 </head>

@@ -1,0 +1,131 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: #3A0A50;
+    /*min-height: 100%;*/
+    height: 100%;
+}
+#container{
+    background: whitesmoke;
+    margin: auto;
+    width: 40%;
+    padding: 10px;
+    border-radius: 14px;
+}
+.container{
+    background: whitesmoke;
+    margin: auto;
+    width: 40%;
+    padding: 10px;
+    border-radius: 14px;
+    display: block;
+}
+button{
+    background: #3A0A50;
+    border: 4px solid #3A0A50;
+    border-radius: 13px;
+    color: white;
+}
+hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+h1{
+    text-align: center;
+}
+/*p{
+    text-align: justify;
+}*/
+.wrapper {
+    min-height: 100%;
+}
+input#regBut{
+    text-align: center;
+    display: block;
+    margin: auto;
+    padding: 4px 8px;
+    background: #3A0A50;
+    border: 6px solid #3A0A50;
+    border-radius: 13px;
+    color: white;
+}
+.entryField{
+    color: black
+}
+.about{
+    padding: 10px;
+    margin-left: 220px;
+    float: left;
+    width: 200px;
+}
+#basket-item{
+    width: 30%;
+    min-height: 220px;
+}
+button.officeButtons{
+    background: #3A0A50;
+    border: 6px solid #3A0A50;
+    border-radius: 13px;
+    color: white;
+}
+form#officeForm{
+    background: whitesmoke;
+    margin: auto;
+    width: 40%;
+    padding: 10px;
+    border-radius: 14px;
+}
+form#registrationForm{
+    background: whitesmoke;
+    margin: auto;
+    width: 15%;
+    padding: 10px;
+    border-radius: 14px;
+    display: block;
+}
+input.registrationInput{
+    border: 2px solid black;
+    border-radius: 13px;
+    color: black;
+}
+/*
+#leftsidebar {
+    float: left;
+    width: 20%;
+}*/
+#leftsidebar{
+    float: left;
+    width: 15%;
+    min-height: 100%;
+    padding: 20px;
+    color: white;
+}
+#product-item{
+    height: 350px;
+    width: 100%;
+    background-color: whitesmoke;
+    text-align: center;
+    margin: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+#main{
+    min-height: 100%;
+    width: 78%;
+    padding-left: 20px;
+    border-left: 2px solid white;
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+#basketImg{
+    position: absolute;
+    float: left;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+}

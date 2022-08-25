@@ -11,7 +11,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class DAOFactory extends AbstractDAOFactory implements DBManager {
+public class  DAOFactory extends AbstractDAOFactory implements DBManager {
 
     private static DAOFactory instance;
     private static UserDAO userDAO;

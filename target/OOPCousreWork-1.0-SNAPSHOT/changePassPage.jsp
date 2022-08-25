@@ -6,27 +6,15 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%--<html>
-<head>
-    <title>Зміна пароля</title>
-</head>
-<body>
-<form action="changePass" method="post">
-    <input name="oldPassword" type="text" size="30" placeholder="Введіть старий пароль">
-    <input name="newPassword" type="text" size="30" placeholder="Введіть новий пароль">
-    <input type="submit">
-</form>
-
-</body>
-</html>--%>
 
 <!DOCTYPE html>
 <html lang="ua">
 <head>
     <meta charset="utf-8">
     <title>Зміна паролю</title>
-    <link href="CSS/change_password.css" rel="stylesheet" type="text/css">
+    <%--<link href="CSS/change_password.css" rel="stylesheet" type="text/css">--%>
     <link href="CSS/headerStyle.css" rel="stylesheet" type="text/css">
+    <link href="CSS/SameCSS.css" rel="stylesheet" type="text/css">
     <link href="CSS/footerStile.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -38,18 +26,18 @@
         <form action="changePass" method="post">
             <h1>Зміна паролю</h1>
             <div>
-                <input name="oldPassword" style="margin-bottom: 20px;" type="text" size="30" placeholder="Введіть старий пароль">
+                <input class="registrationInput" name="oldPassword" <%--style="margin-bottom: 20px;"--%> type="text" size="30" placeholder="Введіть старий пароль">
             </div>
             <div>
-                <input name="newPassword" style="margin-bottom: 20px;" type="text" size="30" placeholder="Введіть новий пароль">
+                <input class="registrationInput" name="newPassword" <%--style="margin-bottom: 20px;"--%> type="text" size="30" placeholder="Введіть новий пароль">
             </div>
-            <input type="submit" value="Підтвердити" style="text-align: center; display: block;
-  margin: auto; background: #3A0A50;">
+            <input id="regBut" type="submit" value="Підтвердити" <%--style="text-align: center; display: block;
+  margin: auto; background: #3A0A50;"--%>>
         </form>
     </div>
 </div>
-<%--<div id="footer">
+<div id="footer">
     <jsp:include page="footerFile.HTML" />
-</div>--%>
+</div>
 </body>
 </html>

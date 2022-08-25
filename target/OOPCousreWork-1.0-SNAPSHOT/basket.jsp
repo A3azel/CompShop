@@ -8,56 +8,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-
-<%--<html>
-<head>
-    <title>Корзина</title>
-</head>
-<body>
-${sessionScope.basketProduct.componentName}
-</body>
-</html>--%>
-
-<%--<!DOCTYPE html>
-<html lang="ua">
-<head>
-    <meta charset="utf-8">
-    <title>Корзина</title>
-    <link href="CSS/headerStyle.css" rel="stylesheet" type="text/css">
-    <link href="CSS/basketFile.css" rel="stylesheet" type="text/css">
-    <link href="CSS/footerStile.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-<div id="header">
-    <jsp:include page="headerFile.HTML" />
-</div>
-<div class="wrapper">
-    <div class="container">
-        <form action="toOrder" method="post">
-            <p>Кошик</p>
-            <div class="cart_items">
-                <div class="image-box">
-                    <img src="${sessionScope.basketProduct.componentPhotoURL}" alt="${sessionScope.basketProduct.componentName}" />
-                    <div class="about">
-                        <p class="title">${sessionScope.basketProduct.componentName}</p>
-                        <p class="price">${sessionScope.basketProduct.componentPrise}</p>
-                    </div>
-                </div>
-            </div>
-            <input type="submit" text-align: center value = "Підтвердити замовлення">
-        </form>
-        <form>
-            <input type="submit" text-align: center value="Видалити">
-        </form>
-    </div>
-</div>
-<div id="footer">
-    <jsp:include page="footerFile.HTML" />
-</div>
-</body>
-</html>--%>
-
-
 <!DOCTYPE html>
 <html lang="ua">
 <head>
@@ -65,6 +15,7 @@ ${sessionScope.basketProduct.componentName}
         <title>Корзина</title>
         <link href="CSS/headerStyle.css" rel="stylesheet" type="text/css">
         <link href="CSS/basketFile.css" rel="stylesheet" type="text/css">
+        <link href="CSS/SameCSS.css" rel="stylesheet" type="text/css">
         <link href="CSS/footerStile.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -78,7 +29,7 @@ ${sessionScope.basketProduct.componentName}
             <c:forEach var="productOnTheBasket" items="${sessionScope.basketCompList}">
                 <div id="basket-item">
                 <p>
-                    <img src="${productOnTheBasket.componentPhotoURL}" alt="${productOnTheBasket.componentName}" />
+                    <img id="basketImg" src="${productOnTheBasket.componentPhotoURL}" alt="${productOnTheBasket.componentName}" />
                 </p>
                 <div class="about">
                     <p>

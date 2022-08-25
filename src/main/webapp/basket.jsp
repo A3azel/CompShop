@@ -15,6 +15,7 @@
         <title>Корзина</title>
         <link href="CSS/headerStyle.css" rel="stylesheet" type="text/css">
         <link href="CSS/basketFile.css" rel="stylesheet" type="text/css">
+        <link href="CSS/SameCSS.css" rel="stylesheet" type="text/css">
         <link href="CSS/footerStile.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -28,7 +29,7 @@
             <c:forEach var="productOnTheBasket" items="${sessionScope.basketCompList}">
                 <div id="basket-item">
                 <p>
-                    <img src="${productOnTheBasket.componentPhotoURL}" alt="${productOnTheBasket.componentName}" />
+                    <img id="basketImg" src="${productOnTheBasket.componentPhotoURL}" alt="${productOnTheBasket.componentName}" />
                 </p>
                 <div class="about">
                     <p>

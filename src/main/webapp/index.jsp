@@ -6,25 +6,26 @@
     <meta charset="utf-8">
     <title>Авторизація</title>
     <link href="CSS/authorization.css" rel="stylesheet" type="text/css">
+    <link href="CSS/SameCSS.css" rel="stylesheet" type="text/css">
     <link href="CSS/footerStile.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
-<div class="wrapper" style="min-height: 100%;">
+<div class="wrapper" <%--style="min-height: 100%;"--%>>
     <form name="ac" action="login" method="post">
         <div class="container">
             <h1>Вхід на сайт</h1>
             <div>
                 <label  accesskey="l">Логін:</label>
-                <p><input style="color: black" name="username" type="text" size="30" placeholder="Введіть логин" required /></p>
+                <p><input class="entryField" <%--style="color: black"--%> name="username" type="text" size="30" placeholder="Введіть логин" required /></p>
             </div>
             <div>
                 <label accesskey="p">Пароль:</label>
-                <p><input style="color: black" name="userPassword" type="password" size="30" placeholder="Введіть пароль" required /></p>
+                <p><input class="entryField" <%--style="color: black"--%> name="userPassword" type="password" size="30" placeholder="Введіть пароль" required /></p>
             </div>
             <div>
-                <input style="text-align: center; display: block;
-    margin: auto;  padding: 4px 8px;  background: #3A0A50; border: 6px solid #3A0A50;" type="submit" value="Вхід"/>
+                <input id = "regBut" <%--style="text-align: center; display: block;
+    margin: auto;  padding: 4px 8px;  background: #3A0A50; border: 6px solid #3A0A50;"--%> type="submit" value="Вхід"/>
             </div>
             <div id="center">
                 <a href="RegistrationPage.jsp">Реєстрація</a>

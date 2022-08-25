@@ -1,4 +1,4 @@
-body{
+/*body{
   background: #3A0A50;
   height: 100%;
 }
@@ -8,7 +8,7 @@ body{
   width: 40%;
   padding: 10px;
   border-radius: 14px;
-}
+}*/
 button{
   background: #3A0A50;
   border: 6px solid #3A0A50;

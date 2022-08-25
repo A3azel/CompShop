@@ -12,8 +12,9 @@
 <head>
     <meta charset="utf-8">
     <title>Зміна паролю</title>
-    <link href="CSS/change_password.css" rel="stylesheet" type="text/css">
+    <%--<link href="CSS/change_password.css" rel="stylesheet" type="text/css">--%>
     <link href="CSS/headerStyle.css" rel="stylesheet" type="text/css">
+    <link href="CSS/SameCSS.css" rel="stylesheet" type="text/css">
     <link href="CSS/footerStile.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -25,13 +26,13 @@
         <form action="changePass" method="post">
             <h1>Зміна паролю</h1>
             <div>
-                <input name="oldPassword" style="margin-bottom: 20px;" type="text" size="30" placeholder="Введіть старий пароль">
+                <input class="registrationInput" name="oldPassword" <%--style="margin-bottom: 20px;"--%> type="text" size="30" placeholder="Введіть старий пароль">
             </div>
             <div>
-                <input name="newPassword" style="margin-bottom: 20px;" type="text" size="30" placeholder="Введіть новий пароль">
+                <input class="registrationInput" name="newPassword" <%--style="margin-bottom: 20px;"--%> type="text" size="30" placeholder="Введіть новий пароль">
             </div>
-            <input type="submit" value="Підтвердити" style="text-align: center; display: block;
-  margin: auto; background: #3A0A50;">
+            <input id="regBut" type="submit" value="Підтвердити" <%--style="text-align: center; display: block;
+  margin: auto; background: #3A0A50;"--%>>
         </form>
     </div>
 </div>

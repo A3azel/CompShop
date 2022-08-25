@@ -1,4 +1,4 @@
-body{
+/*body{
     background: #3A0A50;
     height: 100%;
 }
@@ -10,10 +10,8 @@ body{
     border-radius: 14px;
     display: block;
 
-}
+}*/
 input{
-
     border-radius: 13px;
     color: white;
-
 }

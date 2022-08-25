@@ -13,18 +13,19 @@
 <head>
 
     <title>Registration</title>
-    <link href="CSS/registrationFile.css" rel="stylesheet" type="text/css">
+    <link href="CSS/SameCSS.css" rel="stylesheet" type="text/css">
     <link href="CSS/headerStyle.css" rel="stylesheet" type="text/css">
     <link href="CSS/footerStile.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+
 <div class="wrapper">
-    <form name="ac" action="registration" method="post">
+    <form id="registrationForm" name="ac" action="registration" method="post">
         <h1>Реєстрація</h1>
         <div>
             <p>
                 <label accesskey="l">Логин: </label>
-                <input name="username" type="text" size="30" placeholder="Введіть логин">
+                <input class="registrationInput" name="username" type="text" size="30" placeholder="Введіть логин">
             </p>
 
             <c:choose>
@@ -36,7 +37,7 @@
         <div>
             <p>
                 <label accesskey="p">Пароль: </label>
-                <input name="userPassword" type="password" size="30" placeholder="Введіть пароль">
+                <input class="registrationInput" name="userPassword" type="password" size="30" placeholder="Введіть пароль">
             </p>
             <c:choose>
                 <c:when test="${requestScope.PasswordErrors != null}">
@@ -47,7 +48,7 @@
         <div>
             <p>
                 <label>Підтвердіть пароль: </label>
-                <input name="userPasswordSubmit" type="password" size="30" placeholder="Введіть пароль">
+                <input class="registrationInput" name="userPasswordSubmit" type="password" size="30" placeholder="Введіть пароль">
             </p>
             <c:choose>
                 <c:when test="${requestScope.DifferentPasswords != null}">
@@ -60,7 +61,7 @@
         <div>
             <p>
                 <label accesskey="e">Введіть e-mail: </label>
-                <input name="userEmail" type="email" size="30" placeholder="Введіть адрес електронной пошти">
+                <input class="registrationInput" name="userEmail" type="email" size="30" placeholder="Введіть адрес електронной пошти">
             </p>
             <c:choose>
                 <c:when test="${requestScope.EmailErrors != null}">
@@ -72,7 +73,7 @@
         <div>
             <p>
                 <label accesskey="f">Телефон: </label>
-                <input name="userPhone" type="text" size="30" placeholder="Телефон">
+                <input class="registrationInput" name="userPhone" type="text" size="30" placeholder="Телефон">
             </p>
             <c:choose>
                 <c:when test="${requestScope.PhoneErrors != null}">
@@ -90,8 +91,8 @@
                 </select>
             </p>
         </div>
-        <p text-align: center><input style="text-align: center; display: block;
-    margin: auto;  padding: 4px 8px;  background: #3A0A50; border: 6px solid #3A0A50; color: whitesmoke" type="submit" value="Зареєструватися"/></p>
+        <p text-align: center><input id="regBut" <%--style="text-align: center; display: block;
+    margin: auto;  padding: 4px 8px;  background: #3A0A50; border: 6px solid #3A0A50; color: whitesmoke"--%> type="submit" value="Зареєструватися"/></p>
     </form>
 
 </div>

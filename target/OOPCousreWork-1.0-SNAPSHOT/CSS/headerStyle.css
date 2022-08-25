@@ -1,4 +1,4 @@
-/*html,body{
+html,body{
     margin: 0;
     padding: 0;
     border: 0;
@@ -6,7 +6,7 @@
     vertical-align: baseline;
     background: #3A0A50;
     height: 100%;
-}*/
+}
 #header{
     top: 0;
     left: 0;

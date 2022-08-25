@@ -13,6 +13,7 @@
 <head>
     <title>Shop</title>
     <link href="CSS/catalogfile.css" rel="stylesheet" type="text/css">
+    <link href="CSS/SameCSS.css" rel="stylesheet" type="text/css">
     <link href="CSS/headerStyle.css" rel="stylesheet" type="text/css">
     <link href="CSS/footerStile.css" rel="stylesheet" type="text/css">
 </head>
@@ -28,9 +29,6 @@
             <p><input type="checkbox" name="v1" value="motherboards">Плати</p>
             <p><input type="checkbox" name="v1" value="RAM">RAM</p>
             <p><input type="checkbox" name="v1" value="videoCards">Відео карти</p>
-
-            <%--<input type="range" min="0" max="100">--%>
-
             <p><input type="submit" value="Знайти"></p>
 
         </form>
@@ -43,7 +41,7 @@
 
                 <p><a href="product?productID=${compComponent.componentID}">${compComponent.componentName}</a></p>
 
-                <p>${compComponent.componentPrise} ₴</p>
+                <p>${compComponent.componentPrise} ₴ </p>
 
                 <form action="product" method="get" >
                     <button name="productID" value="${compComponent.componentID}">Купити</button>

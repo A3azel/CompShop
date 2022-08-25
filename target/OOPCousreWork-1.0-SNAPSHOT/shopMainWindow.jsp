@@ -8,47 +8,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-<%--<html>
-<head>
-    <title>Shop</title>
-</head>
-<body>
-<form action="shop" method="get">
-
-    <p><input type="checkbox" name="v1" value="processors">Процессори</p>
-    <p><input type="checkbox" name="v1" value="motherboards">Плати</p>
-    <p><input type="checkbox" name="v1" value="RAM">RAM</p>
-    <p><input type="checkbox" name="v1" value="videoCards">Відео карти</p>
-
-        <input type="range" min="0" max="100">
-
-    <p><input type="submit" value="Знайти"></p>
-
-</form>
-<c:forEach var="compComponent" items="${requestScope.ComponentsList}">
-    <p>${compComponent.componentName}</p>
-
-    <a href="product?productID=${compComponent.componentID}">${compComponent.componentName}</a>
-
-    &lt;%&ndash;<img src="${compComponent.componentPhotoURL}" alt="" title="${compComponent.componentName}">&ndash;%&gt;
-
-    <p>${compComponent.componentPrise}</p>
-
-    <form action="product" method="get" >
-        <button name="productID" value="${compComponent.componentID}">Купити</button>
-    </form>
-
-    <hr>
-</c:forEach>
-
-</body>
-</html>--%>
-
 <!DOCTYPE html>
 <html lang="ua">
 <head>
     <title>Shop</title>
     <link href="CSS/catalogfile.css" rel="stylesheet" type="text/css">
+    <link href="CSS/SameCSS.css" rel="stylesheet" type="text/css">
     <link href="CSS/headerStyle.css" rel="stylesheet" type="text/css">
     <link href="CSS/footerStile.css" rel="stylesheet" type="text/css">
 </head>
@@ -64,9 +29,6 @@
             <p><input type="checkbox" name="v1" value="motherboards">Плати</p>
             <p><input type="checkbox" name="v1" value="RAM">RAM</p>
             <p><input type="checkbox" name="v1" value="videoCards">Відео карти</p>
-
-            <%--<input type="range" min="0" max="100">--%>
-
             <p><input type="submit" value="Знайти"></p>
 
         </form>
@@ -79,7 +41,7 @@
 
                 <p><a href="product?productID=${compComponent.componentID}">${compComponent.componentName}</a></p>
 
-                <p>${compComponent.componentPrise} ₴</p>
+                <p>${compComponent.componentPrise} ₴ </p>
 
                 <form action="product" method="get" >
                     <button name="productID" value="${compComponent.componentID}">Купити</button>
